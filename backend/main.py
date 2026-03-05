@@ -73,6 +73,11 @@ def call_ai_resume_analysis(resume_text: str, job_demand: Dict[str, str]) -> Dic
            "salary": "期望薪资",
            "workYears": "工作年限",
            "education": "学历背景"
+         }},
+          "matchScore": {{
+           "skillMatchRate": 0,
+           "experienceRelevance": 0,
+           "overallMatch": 0  
          }}
        }}
     2. 根据岗位需求计算匹配度，岗位需求：{json.dumps(job_demand, ensure_ascii=False)}
